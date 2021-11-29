@@ -16,8 +16,181 @@ body {
     font-size: 16px;
     line-height: 1.6;
 }
+/*MOBIL*/
+
+.container{
+    max-width: 1500px ;
+    margin: 0 auto;
+    
+}
+
+/* HLAVICKA */
+
+.titulek {
+    font-family: 'Raleway', serif;
+}
+
+.hlavička {
+    text-align: center;
+    
+   
+}
+.pozadí {
+    background-image:url(../../images/island-hlavicka.jpg);
+    background-size: cover;
+    color: white;
+      
+}
 
 
+/* MENU */
+
+a {
+    text-transform: uppercase;
+    color: grey;
+    text-decoration: none;
+  
+   
+}
+.menu{
+    list-style-type: none;   
+    padding:0 10px;
+    margin-bottom: 50px;
+}
+li {
+    border-bottom: pink;  
+    color: purple;
+}   
+hr {
+    margin-left: -12px;
+}
+ 
+
+/* OBSAH */
+
+
+.úvod {
+    text-align: left;
+}
+ 
+.island1 {
+    display: block;
+   
+}
+
+img {
+    width: 500px;
+    height: auto;
+}
+
+.popisek{
+    text-align: center;
+    text-decoration: none;
+    color: gray;
+    
+}
+
+
+
+/* FOTOGALERIE */
+
+    img {
+        width: 500px;
+        height: auto;
+
+}
+.foto {
+    
+    width: 500px;
+        height: auto;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+}
+
+
+/* PATICKA */
+
+.patička {
+    background-color: #EAEFF3;
+    color: grey;
+    
+}
+
+/*---------------------------------------------------------------*/
+
+/*TABLET*/
+
+
+
+@media (min-width: 500px) {
+ 
+    .container{
+    
+     display: block;
+     
+    }
+    
+
+    
+/* HLAVICKA */
+
+.titulek {
+    font-family: 'Raleway', serif;
+    
+}
+
+
+    
+
+/* MENU */
+.menu{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-top: grey solid 1px;
+    border-bottom:grey solid 1px; 
+    
+    
+}
+
+.úvod,
+.proč, 
+.co {
+    margin-left: 30px;
+    margin-right: 0px;
+}    
+
+
+/* OBSAH */
+
+.img {
+    width: 1000px;
+        height: auto;
+}
+
+/* FOTOGALERIE */
+
+
+
+
+/* PATICKA */
+ }
+
+
+ /*-----------------------------------------------------------*/
+/*POČÍTAČ*/
+
+@media (min-width: 1000px) {
+ 
+    .container{
+    
+     display: flex;
+     align-items: center;
+    }
 /* HLAVICKA */
 
 .titulek {
@@ -41,3 +214,4 @@ body {
 
 
 /* PATICKA */
+}
