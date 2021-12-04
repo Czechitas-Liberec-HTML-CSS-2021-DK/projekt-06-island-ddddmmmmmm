@@ -81,6 +81,8 @@ hr {
 img {
     width: 500px;
     height: auto;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .popisek{
@@ -90,18 +92,26 @@ img {
     
 }
 
+p {
+    margin-left: 20px;
+    margin-right: 20px;
+}
 
-
+h2 {
+    margin-left: 20px; 
+}
 /* FOTOGALERIE */
 
-    img {
-        width: 500px;
-        height: auto;
+img {
+     width: 500px;
+     height: auto;
+     padding-left: 0;
+     padding-right: 0;
 
 }
 .foto {
     
-    width: 500px;
+        width: 500px;
         height: auto;
         padding-left: 0;
         padding-right: 0;
@@ -132,18 +142,14 @@ img {
      display: block;
      
     }
-    
-
-    
+        
 /* HLAVICKA */
 
 .titulek {
     font-family: 'Raleway', serif;
     
 }
-
-
-    
+  
 
 /* MENU */
 .menu{
@@ -153,8 +159,7 @@ img {
     padding-right: 30px;
     border-top: grey solid 1px;
     border-bottom:grey solid 1px; 
-    
-    
+     
 }
 
 .úvod,
@@ -167,15 +172,37 @@ img {
 
 /* OBSAH */
 
-.img {
+.island {
     width: 1000px;
-        height: auto;
+    height: auto;
+    padding-left: 0;
+    padding-right: 0;
 }
+
 
 /* FOTOGALERIE */
 
-
-
+img {
+    /*width: 1000px;*/
+    width: auto;
+    height: auto;
+    padding-left: 0;
+    padding-right: 0;
+}
+.foto {
+    
+       width: 50%;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
+        
+}
+.galerie{
+    display: flex;
+  flex-wrap: wrap;
+    
+}
 
 /* PATICKA */
  }
@@ -186,32 +213,79 @@ img {
 
 @media (min-width: 1000px) {
  
-    .container{
     
-     display: flex;
-     align-items: center;
+ 
+        .container{
+        
+         display: block;
+         
+        }
+            
+    /* HLAVICKA */
+    
+    .titulek {
+        font-family: 'Raleway', serif;
+        
     }
-/* HLAVICKA */
-
-.titulek {
-    font-family: 'Raleway', serif;
-}
-
-
-/* MENU */
-
-
-
-
-/* OBSAH */
-
-
-
-
-/* FOTOGALERIE */
-
-
-
-
-/* PATICKA */
-}
+      
+    
+    /* MENU */
+    .menu{
+        display: block;
+        justify-content: space-between;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-top: grey solid 1px;
+        border-bottom:grey solid 1px; 
+         
+    }
+    
+    .úvod,
+    .proč, 
+    .co {
+        margin-left: 30px;
+        margin-right: 0px;
+    }    
+    
+    
+    /* OBSAH */
+    
+    .island {
+        width: 1300px;
+        height: auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    
+    /* FOTOGALERIE */
+    
+    img {
+        width: auto;
+        height: auto;
+        padding-left: 0;
+        padding-right: 0;
+       
+    } 
+    .galerie{
+        display: flex;
+      
+    }
+    .foto{
+        /*  flex: 1 1 33.333%;*/
+        padding-left: 0;
+            padding-right: 0;
+            margin-left: 0;
+            margin-right: 0;  
+            width: 33.333%;
+    }
+    
+   
+            
+   
+       
+        /* PATICKA */ 
+    }
+    
+   
+     
