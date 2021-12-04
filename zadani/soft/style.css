@@ -42,13 +42,17 @@ body {
 }
 
 .autor {
-    padding-bottom: 40px;
+    padding-bottom: 60px;
+    padding-top: 30px;
+    text-decoration: overline;
+    
 }
-
+/*
 .autor::before {
     content:"";
     border-top: solid black 1px;
 }
+NEFUNGUJE /*
 
 /* MENU */
 
@@ -122,16 +126,14 @@ border-bottom: blue solid 1px;
 
 
 }
-a {
-    text-transform: capitalize;
-    border-bottom: solid 1px grey;
-}
-.popisek {
-    font-weight: bold;
-}
-.popisek-copy {
+
+.popisky {
     font-weight: normal;
+    text-align: center;
+    text-decoration: none;
+    color: gray;
 }
+
 /* FOTOGALERIE */
 /*
 img {
@@ -151,7 +153,13 @@ img {
         text-align: center;
 }
 
-
+.popisek{
+    font-weight: bold;
+}
+.popisek-copy {
+    font-weight: normal;
+    
+}
 /* PATICKA */
 
 .patička {
@@ -192,7 +200,10 @@ img {
     border-bottom:grey solid 1px; 
      
 }
-
+li {
+    border-bottom:none; 
+    
+}
 .úvod,
 .proč, 
 .co {
@@ -200,7 +211,13 @@ img {
     margin-right: 0px;
 }    
 
-
+.popisky {
+ position: relative;
+    text-align: right;
+    top: -50px;
+    color:grey;
+    
+}
 /* OBSAH */
 
 .island {
@@ -235,6 +252,24 @@ img {
     
 }
 
+
+.popisek {
+    position: relative;
+       text-align: right;
+       top: -60px;
+       color:grey;
+       display: none;
+}
+
+.popisek:hover,
+.popisek:focus {
+color: pink;
+}
+
+.foto {
+margin: 0;
+padding: 0;
+}
 /* PATICKA */
  }
 
@@ -258,19 +293,29 @@ img {
         font-family: 'Raleway', serif;
         
     }
-      
+    .pozadí{
+        background-size: cover;
+    }
     
     /* MENU */
     .menu{
-        display: block;
-        justify-content: space-between;
+      display: block;
+       text-align: left;
+       float: left;
+       margin-right: 30px;
+       border: none
+      
+        /*justify-content: space-between;
         padding-left: 30px;
         padding-right: 30px;
         border-top: grey solid 1px;
         border-bottom:grey solid 1px; 
-         
+         */
     }
     
+    ul.menu {
+        text-align: left;
+    }
     .úvod,
     .proč, 
     .co {
@@ -281,18 +326,39 @@ img {
     
     /* OBSAH */
     
+    .container {
+        width: 960px;
+        background-color: white;
+        text-align: center;
+        margin-left: 30px;
+    }
+
     .island {
-        width: 1300px;
+        width: 960px;
       /*  height: auto;*/
         padding-left: 0;
         padding-right: 0;
     }
     
-    
+    .proč{
+        text-align: left;
+        padding-right: 200px;
+    }
+    .co{
+       
+        text-align: left;
+        padding-left: 200px;
+        }
+
+        img {
+            text-align: left;
+            width: auto;
+        }
+
     /* FOTOGALERIE */
     
     /*img {
-        width: auto;
+        
         height: auto;
         padding-left: 0;
         padding-right: 0;
@@ -310,12 +376,10 @@ img {
             margin-right: 0;  
             width: 33.333%;
     }
-    
-   
-            
-   
-       
-        /* PATICKA */ 
+    /* PATICKA */ 
+    .patička{
+        text-align: left;
+    }
     }
     
    
