@@ -32,7 +32,6 @@ body {
 
 .hlavička {
     text-align: center;
-    
    
 }
 .pozadí {
@@ -42,6 +41,14 @@ body {
       
 }
 
+.autor {
+    padding-bottom: 40px;
+}
+
+.autor::before {
+    content:"";
+    border-top: solid black 1px;
+}
 
 /* MENU */
 
@@ -52,25 +59,32 @@ a {
   
    
 }
-.menu{
+ul.menu{
     list-style-type: none;   
     padding:0 10px;
     margin-bottom: 50px;
+    
+    
 }
+
 li {
-    border-bottom: pink;  
-    color: purple;
-}   
+    border-bottom: solid 1px grey; 
+    
+} 
+/*
 hr {
     margin-left: -12px;
 }
- 
+ */
 
 /* OBSAH */
 
 
 .úvod {
     text-align: left;
+}
+
+h1 {padding-top: 20px;
 }
  /*
 .island1 {
@@ -98,6 +112,25 @@ p {
 
 h2 {
     margin-left: 20px; 
+   /* border-bottom: blue 1px solid;*/
+    
+}
+
+h2::after{
+content:""; 
+border-bottom: blue solid 1px;
+
+
+}
+a {
+    text-transform: capitalize;
+    border-bottom: solid 1px grey;
+}
+.popisek {
+    font-weight: bold;
+}
+.popisek-copy {
+    font-weight: normal;
 }
 /* FOTOGALERIE */
 /*
