@@ -44,8 +44,8 @@ body {
 .autor {
     padding-bottom: 60px;
     padding-top: 30px;
-    text-decoration: overline;
-    
+    border-top: 1px solid white;
+   
 }
 /*
 .autor::before {
@@ -75,11 +75,7 @@ li {
     border-bottom: solid 1px grey; 
     
 } 
-/*
-hr {
-    margin-left: -12px;
-}
- */
+
 
 /* OBSAH */
 
@@ -90,14 +86,11 @@ hr {
 
 h1 {padding-top: 20px;
 }
- /*
-.island1 {
-    display: block;
-   
-}*/
+ 
+
 
 img {
-   /* width: 500px;*/
+  
     padding-left: 0;
     padding-right: 0;
 }
@@ -116,7 +109,7 @@ p {
 
 h2 {
     margin-left: 20px; 
-   /* border-bottom: blue 1px solid;*/
+   
     
 }
 
@@ -230,13 +223,7 @@ li {
 
 /* FOTOGALERIE */
 
-/*img {
-    width: 1000px;
-   /* width: auto;
-    height: auto;
-    padding-left: 0;
-    padding-right: 0;
-}*/
+
 .foto {
     
        width: 50%;
@@ -257,19 +244,25 @@ li {
     position: relative;
        text-align: right;
        top: -60px;
+       right: 10px;
        color:grey;
-       display: none;
+       opacity: 0;
 }
 
 .popisek:hover,
 .popisek:focus {
-color: pink;
+opacity: 1;
+
 }
+
+
 
 .foto {
 margin: 0;
 padding: 0;
 }
+
+
 /* PATICKA */
  }
 
@@ -305,12 +298,7 @@ padding: 0;
        margin-right: 30px;
        border: none
       
-        /*justify-content: space-between;
-        padding-left: 30px;
-        padding-right: 30px;
-        border-top: grey solid 1px;
-        border-bottom:grey solid 1px; 
-         */
+        
     }
     
     ul.menu {
@@ -357,19 +345,13 @@ padding: 0;
 
     /* FOTOGALERIE */
     
-    /*img {
-        
-        height: auto;
-        padding-left: 0;
-        padding-right: 0;
-       
-    } */
+    
     .galerie{
         display: flex;
       
     }
     .foto{
-        /*  flex: 1 1 33.333%;*/
+       
         padding-left: 0;
             padding-right: 0;
             margin-left: 0;
